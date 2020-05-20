@@ -17,7 +17,7 @@ import me.async.reports.report.ReportManagerFlatYAML;
 public class Main extends JavaPlugin {
 
 	public static Main INSTANCE;
-	public static IReportManager reportManager;
+	private static IReportManager reportManager;
 	
 	static
 	{
