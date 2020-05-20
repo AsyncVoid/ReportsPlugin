@@ -1,0 +1,27 @@
+main: me.async.reports.Main
+author: Async
+version: 0.1
+name: ReportPlugin
+description: Simple report plugin by Async
+commands:
+   report:
+     description: Report a player.
+     aliases: [re]
+     permission: report.cmd
+     usage: Syntax Error. Do /report help for more info.
+permissions:
+   report.*:
+     description: Gives access to all Report commands
+     children:
+       report.make: true
+       report.viewothers: true
+       report.viewself: true
+   report.make:
+     description: Allows the player to make a report
+     default: false
+   report.viewothers:
+     description: Allows the player to view other peoples reports
+     default: false
+   report.viewself:
+     description: Allows the player to view their own reports
+     default: true

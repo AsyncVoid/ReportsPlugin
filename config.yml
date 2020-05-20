@@ -1,0 +1,12 @@
+# Can be type of:
+# - FLATYAML: Report data is stored in a single YAML file
+# - FLATBIN: Report data is stored in a bin file (takes up significantly less space but is unreadable)
+# - DATABASE: Report data is stored in a database, accessing reports on demand
+type: DATABASE
+# The following values are only needed for the DATABASE type
+host: localhost
+port: 3306
+database: minecraft
+username: root
+password: 
+table: reports
